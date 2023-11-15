@@ -34,3 +34,7 @@ go run photoninsights.go
 To compile the project to an executable, type:
 
 go build
+
+Note - the current code processes messages sequentially and is pretty slow as a result. This code could be improved
+by running multiple threads to process messages in parallel and/or using the MongoDB updateMany and insertMany methods
+rather than updateOne / insertOne methods respectively as much of the porcessing time is network latency / overhead.
