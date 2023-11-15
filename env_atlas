@@ -1,2 +1,2 @@
-MONGODB_URI='mongodb+srv://photonuser:PJqLZsdooXKaJVHd@gcrm0.bqwfvpn.mongodb.net/?retryWrites=true&w=majority'
+MONGODB_URI='mongodb+srv://photonuser:XXXXXX@gcrm0.bqwfvpn.mongodb.net/?retryWrites=true&w=majority'
 MESSAGE_FILE='phonehome.json'
