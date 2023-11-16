@@ -65,7 +65,7 @@ func main() {
 	for i := 0; i < 75000; i++ {
 		datagen.GenerateTestMessage()
 		if i%100 == 0 && i > 0 {
-			log.Printf("Processed %d messages in %v seconds", i, time.Now().Sub(startDate).Seconds())
+			log.Printf("Processed %d messages in %v seconds", i, time.Since(startDate).Seconds())
 		}
 	}
 	endDate := time.Now()
