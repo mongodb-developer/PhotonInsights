@@ -1,0 +1,1906 @@
+{
+    "modelName": "JPMC Photon Insights",
+    "collections": [
+        {
+            "collectionName": "Modules",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": true,
+                    "code": "deploymentID",
+                    "comments": "MODULE_ID from MODULE table in Oracle schema.",
+                    "GUID": "717ba7ce-ba94-43b5-b031-4ec2c688e08e",
+                    "error": {}
+                },
+                {
+                    "name": "payload",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "name": "name",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "50b697c0-bfc3-43af-b36c-a0e55937390c",
+                            "error": {}
+                        },
+                        {
+                            "name": "LOB",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "b4510cbc-70bf-458e-b287-3fe0e3559b04",
+                            "comments": "from product table in Oracle",
+                            "error": {}
+                        },
+                        {
+                            "name": "applicationID",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "numeric",
+                            "GUID": "8994dc61-642e-4452-90a4-bca2032c2c88",
+                            "comments": "From SEAL table in Oracle",
+                            "error": {}
+                        },
+                        {
+                            "name": "photonVersion",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "8ffb2d53-5dca-4123-806b-a374404f9085",
+                            "error": {}
+                        },
+                        {
+                            "name": "monetaVersion",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "3cf0bc23-657c-46a3-b579-6210be23104a",
+                            "error": {}
+                        },
+                        {
+                            "name": "productName",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "6d1d4798-f76d-44c6-8d44-73fc335e3d0f",
+                            "comments": "From product table in Oracle",
+                            "error": {}
+                        },
+                        {
+                            "name": "productLine",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "004d9c14-58c2-4a55-9b5d-34aa88dd5f3e",
+                            "comments": "From PRODUCT table in Oracle",
+                            "error": {}
+                        },
+                        {
+                            "name": "productOwner",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "92f20946-18d3-400b-a1a1-0d14b2c87ca3",
+                            "comments": "From PRODUCT table in Oracle",
+                            "error": {}
+                        },
+                        {
+                            "name": "productOwnerSID",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "6fc41d62-d002-4fb2-a741-4fba19e418e5",
+                            "comments": "From PRODUCT table in Oracle",
+                            "error": {}
+                        },
+                        {
+                            "name": "techPartner",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "389b1e3a-c047-48b9-8615-9103a02c2ba0",
+                            "comments": "From PRODUCT table in Oracle",
+                            "error": {}
+                        },
+                        {
+                            "name": "techPartnerSID",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "f83209e3-9a21-411f-8a6c-15762b76d556",
+                            "comments": "From PRODUCT table in Oracle",
+                            "error": {}
+                        },
+                        {
+                            "name": "createdOn",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "date",
+                            "primaryKey": false,
+                            "GUID": "206aecee-0493-4ada-8f12-30d5b753549e",
+                            "error": {}
+                        },
+                        {
+                            "name": "subscribedUsers",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "array",
+                            "properties": [
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "68ab1b85-2097-498c-8121-e6c3f70dd24e",
+                                    "arrayItem": true,
+                                    "displayName": "SID",
+                                    "foreignCollection": "512373fc-1778-4a86-927c-a9ef5a9ab3b7",
+                                    "parentRelationship": "6939948f-71cd-4754-9fa1-0bd408014bd1",
+                                    "foreignField": [
+                                        "512373fc-1778-4a86-927c-a9ef5a9ab3b7",
+                                        "7d3050a3-2a56-42fc-af66-9503487d1e14"
+                                    ],
+                                    "error": {}
+                                }
+                            ],
+                            "additionalItems": true,
+                            "GUID": "0f6d8d74-cfaa-4fed-96e6-735912d77d56",
+                            "error": {
+                                "name": false,
+                                "code": false
+                            },
+                            "foreignCollection": "",
+                            "foreignField": []
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "85ee6133-7952-4d37-baf8-34e5f9318dae",
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "error": {}
+                },
+                {
+                    "name": "deployments",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "name": "deploymentId",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "ba03c202-18ab-410b-b0f5-a19738a6057b",
+                                    "error": {},
+                                    "childRelationships": [
+                                        "c042ed82-9ca4-4952-a580-f9862f9e1387",
+                                        "6b3bbaf6-d68b-4cb1-b8ce-081a97089193"
+                                    ]
+                                },
+                                {
+                                    "name": "payload",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "document",
+                                    "properties": [
+                                        {
+                                            "name": "applicationName",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "string",
+                                            "GUID": "7b6076b2-fd5d-41d7-ab5a-0a24f217d63b",
+                                            "error": {}
+                                        },
+                                        {
+                                            "name": "deploymentName",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "string",
+                                            "GUID": "d604657e-7ece-4464-94fb-06c6f06385dd",
+                                            "error": {}
+                                        },
+                                        {
+                                            "name": "env",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "string",
+                                            "GUID": "bbeae101-f4e9-4650-aa0b-b188efe466f3",
+                                            "error": {}
+                                        },
+                                        {
+                                            "name": "version",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "string",
+                                            "GUID": "71c38e85-d630-457c-9ba4-e36ce0cab973",
+                                            "error": {}
+                                        },
+                                        {
+                                            "name": "instanceCount",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "numeric",
+                                            "GUID": "69d23aa4-9815-46e2-80e3-a10c706abd7b",
+                                            "error": {}
+                                        },
+                                        {
+                                            "name": "hasAnomaly",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "boolean",
+                                            "GUID": "94f91cf7-5714-4e87-88bb-7518d1e71f68",
+                                            "error": {}
+                                        },
+                                        {
+                                            "name": "platform",
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "string",
+                                            "GUID": "45c74db7-04ab-4412-9b04-85a4d2d64ef6",
+                                            "error": {}
+                                        }
+                                    ],
+                                    "additionalProperties": false,
+                                    "GUID": "7d4c4a41-19ac-4288-8640-260fd7f88601",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "instances",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "array",
+                                    "properties": [
+                                        {
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "document",
+                                            "properties": [
+                                                {
+                                                    "name": "platformName",
+                                                    "hackoladeMeta": {},
+                                                    "isActivated": true,
+                                                    "type": "string",
+                                                    "GUID": "a1f09829-3eaf-49c7-a110-8e5bdbd7e82e",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "name": "spaceName",
+                                                    "hackoladeMeta": {},
+                                                    "isActivated": true,
+                                                    "type": "string",
+                                                    "GUID": "81ea29d0-ad30-4a27-aa84-3d3a494008f0",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "name": "poolName",
+                                                    "hackoladeMeta": {},
+                                                    "isActivated": true,
+                                                    "type": "string",
+                                                    "GUID": "ca20537c-abb9-49e0-92a6-bb42e17397ee",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "name": "spaceId",
+                                                    "hackoladeMeta": {},
+                                                    "isActivated": true,
+                                                    "type": "string",
+                                                    "GUID": "ca2ae7e4-7499-475b-81f6-13f22ad8cbae",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "name": "cfAPI",
+                                                    "hackoladeMeta": {},
+                                                    "isActivated": true,
+                                                    "type": "string",
+                                                    "GUID": "5e36afbc-a399-495b-9c29-7ba9c4aa6d0f",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "name": "instanceId",
+                                                    "hackoladeMeta": {},
+                                                    "isActivated": true,
+                                                    "type": "string",
+                                                    "GUID": "db55b8fc-7532-44bf-bf82-a20d2bf5f612",
+                                                    "foreignCollection": "56ca338b-9491-405b-a97b-e29e51f0e90e",
+                                                    "foreignField": [
+                                                        "56ca338b-9491-405b-a97b-e29e51f0e90e",
+                                                        "fc3c6501-4205-4b48-9b85-b6d54936544a"
+                                                    ],
+                                                    "childRelationships": [
+                                                        "9744edd9-5cc7-49ac-9893-947d74898e14",
+                                                        "35de7c4c-9c34-48bb-bb09-6c79dcc2b424"
+                                                    ],
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "name": "createdOn",
+                                                    "hackoladeMeta": {},
+                                                    "isActivated": true,
+                                                    "type": "date",
+                                                    "primaryKey": false,
+                                                    "GUID": "5b34cb09-c231-4dab-948f-ff774803f81e",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "name": "lastUpdatedOn",
+                                                    "hackoladeMeta": {},
+                                                    "isActivated": true,
+                                                    "type": "date",
+                                                    "primaryKey": false,
+                                                    "GUID": "149cfa34-e235-4859-a574-f7727580e350",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "name": "active",
+                                                    "hackoladeMeta": {},
+                                                    "isActivated": true,
+                                                    "type": "boolean",
+                                                    "GUID": "33834706-098c-4d99-9f66-3b5a72bc95f0",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "name": "hasAnomaly",
+                                                    "hackoladeMeta": {},
+                                                    "isActivated": true,
+                                                    "type": "boolean",
+                                                    "GUID": "269003c2-5eda-4ab0-adab-644e93e4004b",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "name": "refreshInterval",
+                                                    "hackoladeMeta": {},
+                                                    "isActivated": true,
+                                                    "type": "string",
+                                                    "GUID": "54b0db14-5295-47ba-ac5f-6ec203e7fdea",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "name": "photonVersion",
+                                                    "hackoladeMeta": {},
+                                                    "isActivated": true,
+                                                    "type": "string",
+                                                    "GUID": "63bed1ee-de3e-4d37-b8e9-b3aa1a7aa991",
+                                                    "error": {}
+                                                }
+                                            ],
+                                            "additionalProperties": false,
+                                            "error": {},
+                                            "GUID": "0e9c1d79-dfed-404f-bd92-79e3a4740551",
+                                            "arrayItem": true
+                                        }
+                                    ],
+                                    "additionalItems": true,
+                                    "GUID": "b97abfca-eb37-4424-9158-2de22d8f8330",
+                                    "comments": "Entries in this array can be polymorphic for each environment type - GAP, GKP, ON_PREM etc. Example shows fields for a GAP deployment.",
+                                    "error": {
+                                        "name": false,
+                                        "code": false
+                                    },
+                                    "foreignCollection": "",
+                                    "foreignField": []
+                                },
+                                {
+                                    "name": "anomalies",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "array",
+                                    "properties": [
+                                        {
+                                            "hackoladeMeta": {},
+                                            "isActivated": true,
+                                            "type": "document",
+                                            "properties": [
+                                                {
+                                                    "name": "anomalyId",
+                                                    "hackoladeMeta": {},
+                                                    "isActivated": true,
+                                                    "type": "objectId",
+                                                    "GUID": "05bb1a17-c160-44c0-9134-765558f40dbb",
+                                                    "childRelationships": [],
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "name": "payload",
+                                                    "hackoladeMeta": {},
+                                                    "isActivated": true,
+                                                    "type": "document",
+                                                    "properties": [
+                                                        {
+                                                            "name": "propertyName",
+                                                            "hackoladeMeta": {},
+                                                            "isActivated": true,
+                                                            "type": "string",
+                                                            "GUID": "2e7f7709-8755-4ce7-804e-456d493f758c",
+                                                            "error": {}
+                                                        },
+                                                        {
+                                                            "name": "deploymentName",
+                                                            "hackoladeMeta": {},
+                                                            "isActivated": true,
+                                                            "type": "string",
+                                                            "GUID": "a14012a4-6d41-4eaf-8845-5412fa87360a",
+                                                            "error": {}
+                                                        },
+                                                        {
+                                                            "name": "expectedValue",
+                                                            "hackoladeMeta": {},
+                                                            "isActivated": true,
+                                                            "type": "string",
+                                                            "GUID": "62a5aeea-194a-4230-b205-ab8283be5790",
+                                                            "error": {}
+                                                        },
+                                                        {
+                                                            "name": "currentValue",
+                                                            "hackoladeMeta": {},
+                                                            "isActivated": true,
+                                                            "type": "string",
+                                                            "GUID": "6118cb3d-022e-43b6-be39-4375c7919f3d",
+                                                            "error": {}
+                                                        },
+                                                        {
+                                                            "name": "instanceCount",
+                                                            "hackoladeMeta": {},
+                                                            "isActivated": true,
+                                                            "type": "numeric",
+                                                            "GUID": "d644155f-e9a8-4fbb-9246-1252585c586b",
+                                                            "error": {}
+                                                        },
+                                                        {
+                                                            "name": "description",
+                                                            "hackoladeMeta": {},
+                                                            "isActivated": true,
+                                                            "type": "string",
+                                                            "GUID": "04f2a72e-4fba-435f-8d8e-614aa7dc7e56",
+                                                            "error": {}
+                                                        },
+                                                        {
+                                                            "name": "impactedInstances",
+                                                            "hackoladeMeta": {},
+                                                            "isActivated": true,
+                                                            "type": "array",
+                                                            "properties": [
+                                                                {
+                                                                    "hackoladeMeta": {},
+                                                                    "isActivated": true,
+                                                                    "type": "string",
+                                                                    "GUID": "087770c5-8d41-4485-bb41-8b418ba45afe",
+                                                                    "arrayItem": true,
+                                                                    "displayName": "instanceId",
+                                                                    "error": {}
+                                                                }
+                                                            ],
+                                                            "additionalItems": true,
+                                                            "GUID": "49e20b18-3caf-4c9f-b0a8-d73848a2df57",
+                                                            "error": {}
+                                                        }
+                                                    ],
+                                                    "additionalProperties": false,
+                                                    "GUID": "8dc1977b-5e71-4d3a-866e-d28968d6fe1b",
+                                                    "error": {}
+                                                },
+                                                {
+                                                    "name": "ruleId",
+                                                    "hackoladeMeta": {},
+                                                    "isActivated": true,
+                                                    "type": "numeric",
+                                                    "GUID": "3ccd7141-1f12-4cba-8fd9-20334d9031b4",
+                                                    "error": {},
+                                                    "childRelationships": [
+                                                        "d28aa74d-2549-44c1-abe7-58aced990aa8"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "remediated",
+                                                    "hackoladeMeta": {},
+                                                    "isActivated": true,
+                                                    "type": "boolean",
+                                                    "GUID": "13519da1-ce01-4e57-a2d2-a07d8bab61f8",
+                                                    "error": {}
+                                                }
+                                            ],
+                                            "additionalProperties": false,
+                                            "error": {},
+                                            "GUID": "6cb8ec6d-3afa-4e86-a2ce-751a51b87bad",
+                                            "arrayItem": true
+                                        }
+                                    ],
+                                    "additionalItems": true,
+                                    "GUID": "b497efdf-186d-4e04-8e0d-6c9d53d9b9ed",
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "error": {},
+                            "GUID": "45741309-e7fd-4e22-9cc6-ed3c8b864910",
+                            "arrayItem": true
+                        }
+                    ],
+                    "additionalItems": true,
+                    "GUID": "f43bf243-9e82-4f1a-974d-d4f55a759753",
+                    "error": {}
+                },
+                {
+                    "name": "Instances",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "name": "applicationId",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "GUID": "f8aa1fe1-0193-436f-bab3-b0bfee4f4fd4",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "deploymentName",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "88330226-3938-4bcf-8afd-563f104c05e8",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "deploymentId",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "afd1ba8b-c679-4b7f-ad02-911e0aed16ec",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "env",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "21120118-8dc7-4a2f-be72-d0afab7d3ebb",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "instanceId",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "c438c769-e8a7-4c79-b66d-7befa3455d5e",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "platform",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "e29d336e-9699-4dd5-a883-5af83efeb7b3",
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "error": {},
+                            "GUID": "268a82c9-40a1-454d-8a08-b05a30d21ea6",
+                            "arrayItem": true
+                        }
+                    ],
+                    "additionalItems": true,
+                    "GUID": "288f81d9-e8b7-485e-b3f9-cdaba5d412f6",
+                    "error": {}
+                },
+                {
+                    "name": "tags",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "name": "tagName",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "f2343a1e-9439-414c-a05d-b2e8e6277595",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "tagValue",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "a36511c2-1868-44a6-a692-6ff0b2c5c483",
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "error": {},
+                            "GUID": "e4568aa9-ce4b-4872-9a5c-befb2765b6e7",
+                            "arrayItem": true
+                        }
+                    ],
+                    "additionalItems": true,
+                    "GUID": "7b276678-e636-4f15-96e6-8e93388debfc",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "foreignCollection": "",
+                    "foreignField": []
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "352bede5-c3f6-44d4-9d12-b43e9d227a53"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "05af125b-b10b-478a-9c74-ec7effc59611",
+            "bucketId": "b244a2d0-f18e-47c7-9c1d-fc4704fcd929",
+            "comments": "The Modules collection will be used to populate the initial landing page. As every document in the collection is going to be returned, I recommend using a clustered collection to store this data as it'll mean the data is stored efficiently on disk for retrieval. The value of the _id field in this collection should be immutable, sequentially increasing and as small as possible. If the numeric primary keys from the Oracle implementation meet these requirements, they can be reused, otherwise I'd use the default MongoDB ObjectID values.\n\nThe payload section of the document are fields used only to populate the UI - there are no searches or calculations carried out on these fields and they are included in their own section of the document to facilitate efficient document scanning.\n\nI've included tags in an embedded array, eliminating the need for a separate Tags collection, although I'm not clear where tags are actually used.\n\nLikewise, the list of users subscribing to a module is represented as an array within the document, removing the need for a bridging table (as used in Oracle) to map the many-to-many relationship tot he Users collection. However, I'm not sure if the Users collection is actually necessary. As far as driving the UI is concerned, I didn't see any use for it.\n\n\nThe Deployments collection will contain one document for each module and will be used to populate the deployments UI "
+        },
+        {
+            "collectionName": "Messages",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": true,
+                    "GUID": "49ea874b-73e1-42c8-911c-6bcefb4b2ef7",
+                    "comments": "_id should be set to the instanceId",
+                    "error": {}
+                },
+                {
+                    "name": "baseLine",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "boolean",
+                    "GUID": "f80f1756-14ad-4e5f-bf52-6f87565345b9",
+                    "error": {}
+                },
+                {
+                    "name": "cloud",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "name": "space_name",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "bd54b412-630d-4097-9343-678ff2973eda",
+                            "error": {}
+                        },
+                        {
+                            "name": "appId",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "numeric",
+                            "GUID": "a28989c4-5be1-4f7d-9d93-e50726112eb4",
+                            "error": {}
+                        },
+                        {
+                            "name": "appName",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "fd7f3890-1c03-4e9a-8952-f56bcd9b95df",
+                            "parentRelationship": "c042ed82-9ca4-4952-a580-f9862f9e1387",
+                            "foreignCollection": "05af125b-b10b-478a-9c74-ec7effc59611",
+                            "foreignField": [
+                                "05af125b-b10b-478a-9c74-ec7effc59611",
+                                "f43bf243-9e82-4f1a-974d-d4f55a759753",
+                                "45741309-e7fd-4e22-9cc6-ed3c8b864910",
+                                "ba03c202-18ab-410b-b0f5-a19738a6057b"
+                            ],
+                            "error": {}
+                        },
+                        {
+                            "name": "instanceId",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "b3b5fa3b-9715-4597-81ff-97302c7acd92",
+                            "parentRelationship": "35de7c4c-9c34-48bb-bb09-6c79dcc2b424",
+                            "foreignCollection": "05af125b-b10b-478a-9c74-ec7effc59611",
+                            "foreignField": [
+                                "05af125b-b10b-478a-9c74-ec7effc59611",
+                                "f43bf243-9e82-4f1a-974d-d4f55a759753",
+                                "45741309-e7fd-4e22-9cc6-ed3c8b864910",
+                                "b97abfca-eb37-4424-9158-2de22d8f8330",
+                                "0e9c1d79-dfed-404f-bd92-79e3a4740551",
+                                "db55b8fc-7532-44bf-bf82-a20d2bf5f612"
+                            ],
+                            "error": {}
+                        },
+                        {
+                            "name": "space_id",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "b3576c6c-b054-402d-b275-d8c60a191ea6",
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "0b3dbf18-4a53-49e4-b71a-9a0baefb96d3",
+                    "error": {}
+                },
+                {
+                    "name": "configs",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [],
+                    "additionalProperties": false,
+                    "error": {},
+                    "primaryKey": false,
+                    "GUID": "fc47379f-b0a6-45a1-b64e-71868d820937"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "4921e503-671e-4f69-ba05-0a9b888bf096"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "56ca338b-9491-405b-a97b-e29e51f0e90e",
+            "bucketId": "b244a2d0-f18e-47c7-9c1d-fc4704fcd929"
+        },
+        {
+            "collectionName": "Modifications",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "eccd5176-4704-4200-97e0-458fc15dc6ce",
+                    "primaryKey": true,
+                    "error": {}
+                },
+                {
+                    "name": "deploymentId",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "d6422aaa-7e61-4dd1-bb74-f04b6cce4cdf",
+                    "error": {}
+                },
+                {
+                    "name": "instanceId",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "2e89058f-8f44-4627-906f-8993cd2888a4",
+                    "foreignCollection": "05af125b-b10b-478a-9c74-ec7effc59611",
+                    "foreignField": [
+                        "05af125b-b10b-478a-9c74-ec7effc59611",
+                        "f43bf243-9e82-4f1a-974d-d4f55a759753",
+                        "45741309-e7fd-4e22-9cc6-ed3c8b864910",
+                        "b97abfca-eb37-4424-9158-2de22d8f8330",
+                        "0e9c1d79-dfed-404f-bd92-79e3a4740551",
+                        "db55b8fc-7532-44bf-bf82-a20d2bf5f612"
+                    ],
+                    "parentRelationship": "9744edd9-5cc7-49ac-9893-947d74898e14",
+                    "error": {}
+                },
+                {
+                    "name": "operation",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "error": {},
+                    "GUID": "5250cce6-dbd6-4726-a2a7-837ed01ff48f"
+                },
+                {
+                    "name": "oldValue",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "ae421d93-b001-4a23-b7d4-57d8b295b6b6",
+                    "error": {}
+                },
+                {
+                    "name": "newValue",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "4a6b3351-4685-44c0-9554-87b436c92815",
+                    "error": {}
+                },
+                {
+                    "name": "path",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "7ece0b7a-768c-4018-9118-e1c650341fa2",
+                    "error": {}
+                },
+                {
+                    "name": "date",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "3062c2b8-2450-4a7b-9b26-2b4eb1d0c229",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "42d8ef14-b288-4fea-8818-49a719d45ec4"
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "7177c010-b33f-4d20-8880-f86071436254",
+            "bucketId": "b244a2d0-f18e-47c7-9c1d-fc4704fcd929",
+            "hackoladeMeta": {},
+            "timeseries": true,
+            "timeseriesOptions": [
+                {
+                    "GUID": "b7ffbd5e-b247-4372-93f7-708cd50bfaf4",
+                    "key": [],
+                    "timeField": [
+                        {
+                            "keyId": "3062c2b8-2450-4a7b-9b26-2b4eb1d0c229"
+                        }
+                    ],
+                    "metaField": [
+                        {
+                            "keyId": "2e89058f-8f44-4627-906f-8993cd2888a4"
+                        }
+                    ],
+                    "granularity": "hours"
+                }
+            ],
+            "error": {}
+        },
+        {
+            "collectionName": "Rules",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "numeric",
+                    "GUID": "3cccac2b-aa2f-4ab0-876d-7bd18e5734cd",
+                    "primaryKey": true,
+                    "foreignCollection": "05af125b-b10b-478a-9c74-ec7effc59611",
+                    "foreignField": [
+                        "05af125b-b10b-478a-9c74-ec7effc59611",
+                        "f43bf243-9e82-4f1a-974d-d4f55a759753",
+                        "45741309-e7fd-4e22-9cc6-ed3c8b864910",
+                        "b497efdf-186d-4e04-8e0d-6c9d53d9b9ed",
+                        "6cb8ec6d-3afa-4e86-a2ce-751a51b87bad",
+                        "3ccd7141-1f12-4cba-8fd9-20334d9031b4"
+                    ],
+                    "error": {}
+                },
+                {
+                    "name": "version",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "numeric",
+                    "GUID": "1ff4e90e-97ea-41f1-9d5d-faafb1cad14b",
+                    "error": {}
+                },
+                {
+                    "name": "ruleType",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "fc60f815-0edf-44be-8ddb-6a0c825472bd",
+                    "error": {}
+                },
+                {
+                    "name": "property",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "9ff4a9ad-b025-4537-be50-c456e721624f",
+                    "error": {}
+                },
+                {
+                    "name": "supportedInVersion",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "f7284278-58e6-45bc-ac41-83223e9f2145",
+                    "error": {}
+                },
+                {
+                    "name": "active",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "boolean",
+                    "GUID": "48a9ac60-2596-4843-97dc-96691c2ed25e",
+                    "error": {}
+                },
+                {
+                    "name": "activeFrom",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "29276606-2166-4f77-8bf0-e8d58306c303",
+                    "error": {}
+                },
+                {
+                    "name": "script",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "50a39bb0-e3db-4fc4-8246-8e5225459178",
+                    "error": {}
+                },
+                {
+                    "name": "valueComparisonType",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "c18bb65d-c190-4eff-a56e-dd02a0ab99f6",
+                    "error": {}
+                },
+                {
+                    "name": "value",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "b5af12fb-5b56-48cc-bb18-e20d3c3a8c85",
+                    "error": {}
+                },
+                {
+                    "name": "lowerBound",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "8bad45be-da90-41b7-8e5d-ae8169d00d25",
+                    "error": {}
+                },
+                {
+                    "name": "upperBound",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "334fae25-5055-4985-9640-841704a3bf7c",
+                    "error": {}
+                },
+                {
+                    "name": "severity",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "794a57b3-c012-40d1-a978-305d828e021e",
+                    "error": {}
+                },
+                {
+                    "name": "description",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "9ee9d672-720e-49ec-9a07-96e0e4f1ac9b",
+                    "error": {}
+                },
+                {
+                    "name": "createdOn",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "cc10c22e-8a06-4b8c-96c0-296a80a66e71",
+                    "error": {}
+                },
+                {
+                    "name": "lastUpdatedOn",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "b8208563-945c-4968-b195-13b7ff13bbab",
+                    "error": {}
+                },
+                {
+                    "name": "createdBy",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "4f59c850-4742-4b1b-bbfe-c6c866b16ad4",
+                    "error": {}
+                },
+                {
+                    "name": "lastUpdatedBy",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "8e0c59d2-7b82-4879-a3a2-261a980871fc",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "4b6f7189-0885-4ba3-982b-5cf9b43a2d09"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "e35bf049-be16-472c-975e-378d84f48299",
+            "bucketId": "b244a2d0-f18e-47c7-9c1d-fc4704fcd929"
+        },
+        {
+            "collectionName": "Users",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "7d3050a3-2a56-42fc-af66-9503487d1e14",
+                    "required": false,
+                    "primaryKey": true,
+                    "comments": "I've included the User collection, although it's not clear if it's actually necessary or not. ",
+                    "error": {
+                        "name": false,
+                        "code": false
+                    },
+                    "code": "SID",
+                    "childRelationships": [
+                        "6939948f-71cd-4754-9fa1-0bd408014bd1"
+                    ]
+                },
+                {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "85110f81-735e-45fc-b26c-a56172834180",
+                    "name": "firstName",
+                    "error": {}
+                },
+                {
+                    "name": "middleName",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "160d297c-9abe-432a-892a-76efd2f78e15",
+                    "error": {}
+                },
+                {
+                    "name": "lastName",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "64de8c8f-5b86-433c-9cfa-646f187ad836",
+                    "error": {}
+                },
+                {
+                    "name": "persona",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "039bf3d2-2ece-4fa0-aed4-c6faa5dcd3f7",
+                    "error": {}
+                },
+                {
+                    "name": "active",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "boolean",
+                    "error": {},
+                    "GUID": "ab6d5ae5-7696-47bf-945a-7fe7c2929d84"
+                },
+                {
+                    "name": "lastLoginTime",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "error": {},
+                    "GUID": "91b73434-47a5-4c51-aaf9-093001f7de3f"
+                },
+                {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "4691195a-1065-4df9-a724-712e8771fd5a",
+                    "name": "LOB",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "20adfa93-02d2-42a1-af56-0109f81f9222"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "512373fc-1778-4a86-927c-a9ef5a9ab3b7",
+            "bucketId": "b244a2d0-f18e-47c7-9c1d-fc4704fcd929"
+        },
+        {
+            "collectionName": "Builds",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "f2f616af-cf11-4281-9574-6aa9a0d93348",
+                    "foreignCollection": "05af125b-b10b-478a-9c74-ec7effc59611",
+                    "foreignField": [
+                        "05af125b-b10b-478a-9c74-ec7effc59611",
+                        "f43bf243-9e82-4f1a-974d-d4f55a759753",
+                        "45741309-e7fd-4e22-9cc6-ed3c8b864910",
+                        "ba03c202-18ab-410b-b0f5-a19738a6057b"
+                    ],
+                    "error": {}
+                },
+                {
+                    "name": "builds",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "name": "version",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "6be783d0-4374-4b1f-be8e-5a06c596346c",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "buildID",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "GUID": "8648fb5d-dcbd-485e-a11e-10a04eb544ac",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "commitID",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "9e5d1f42-8dec-4f3c-a006-fd7864ce4e17",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "commitTime",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "date",
+                                    "primaryKey": false,
+                                    "GUID": "1851352f-3bf2-4c7c-8786-cdc74c823d94",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "branchName",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "fbfea5c8-490b-4e30-8ee6-0f82c1f1e77f",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "buildTime",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "date",
+                                    "primaryKey": false,
+                                    "GUID": "8f3b1ea4-7b74-4547-b5bc-ee184136a042",
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "error": {},
+                            "GUID": "992eecae-fea8-48f2-b455-a5d5cbd8a38e",
+                            "arrayItem": true
+                        }
+                    ],
+                    "additionalItems": true,
+                    "GUID": "1592a855-af1e-43fe-8f61-868c018420f0",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "ed7dad87-41e7-4961-9473-c099eb667292"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "9232c963-19e3-4a69-a8e8-335b7c85cc3d",
+            "bucketId": "b244a2d0-f18e-47c7-9c1d-fc4704fcd929",
+            "comments": "Contains one document for each deployment, with an array of build data for the deployment. The _id value of builds documents will match deploymentID values in Deployments documents.\n\nEach module document will be linked to many Builds documents, however there is a one-to-one relationship between Builds documents and individual entries in the deployments array of each module document.\n\nIt's not clear from screenshots I've seen, what the data in the Builds documents will be used for as the current version is also embedded in the deployment data."
+        }
+    ],
+    "buckets": [
+        {
+            "name": "Photon Insights",
+            "type": "bucket",
+            "collectionIds": [
+                "05af125b-b10b-478a-9c74-ec7effc59611",
+                "56ca338b-9491-405b-a97b-e29e51f0e90e",
+                "7177c010-b33f-4d20-8880-f86071436254",
+                "e35bf049-be16-472c-975e-378d84f48299",
+                "512373fc-1778-4a86-927c-a9ef5a9ab3b7",
+                "9232c963-19e3-4a69-a8e8-335b7c85cc3d"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "b244a2d0-f18e-47c7-9c1d-fc4704fcd929",
+            "hackoladeMeta": {
+                "validationErrors": {
+                    "name": true
+                }
+            }
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "Instances_Messages",
+            "relationshipType": "",
+            "parentField": [
+                [
+                    "05af125b-b10b-478a-9c74-ec7effc59611",
+                    "f43bf243-9e82-4f1a-974d-d4f55a759753",
+                    "45741309-e7fd-4e22-9cc6-ed3c8b864910",
+                    "b97abfca-eb37-4424-9158-2de22d8f8330",
+                    "0e9c1d79-dfed-404f-bd92-79e3a4740551",
+                    "db55b8fc-7532-44bf-bf82-a20d2bf5f612"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "56ca338b-9491-405b-a97b-e29e51f0e90e",
+                    "0b3dbf18-4a53-49e4-b71a-9a0baefb96d3",
+                    "b3b5fa3b-9715-4597-81ff-97302c7acd92"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "1..n",
+            "GUID": "35de7c4c-9c34-48bb-bb09-6c79dcc2b424",
+            "parentCollection": "05af125b-b10b-478a-9c74-ec7effc59611",
+            "childCollection": "56ca338b-9491-405b-a97b-e29e51f0e90e",
+            "hackoladeStyles": {
+                "GUID": "d47392b6-8536-4d92-beea-f9d539c9c447",
+                "autoPositioning": false,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 2704,
+                        "y": 1380.5070636593005
+                    },
+                    {
+                        "x": 2515,
+                        "y": 1380.5070636593005
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            },
+            "comments": "Cardinality is one to many between modules and messages. However, each message is tied to one specific instance."
+        },
+        {
+            "name": "Instances_ConfigChanges",
+            "relationshipType": "",
+            "parentField": [
+                [
+                    "05af125b-b10b-478a-9c74-ec7effc59611",
+                    "f43bf243-9e82-4f1a-974d-d4f55a759753",
+                    "45741309-e7fd-4e22-9cc6-ed3c8b864910",
+                    "b97abfca-eb37-4424-9158-2de22d8f8330",
+                    "0e9c1d79-dfed-404f-bd92-79e3a4740551",
+                    "db55b8fc-7532-44bf-bf82-a20d2bf5f612"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "7177c010-b33f-4d20-8880-f86071436254",
+                    "2e89058f-8f44-4627-906f-8993cd2888a4"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "GUID": "9744edd9-5cc7-49ac-9893-947d74898e14",
+            "parentCollection": "05af125b-b10b-478a-9c74-ec7effc59611",
+            "childCollection": "7177c010-b33f-4d20-8880-f86071436254",
+            "hackoladeStyles": {
+                "GUID": "ad927217-3196-4564-9c8e-5ea2d5680219",
+                "autoPositioning": false,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 2676,
+                        "y": 1746
+                    },
+                    {
+                        "x": 2515,
+                        "y": 1746
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "name": "Users_Deployments",
+            "relationshipType": "",
+            "parentField": [
+                [
+                    "512373fc-1778-4a86-927c-a9ef5a9ab3b7",
+                    "7d3050a3-2a56-42fc-af66-9503487d1e14"
+                ]
+            ],
+            "parentCardinality": "0..n",
+            "childField": [
+                [
+                    "05af125b-b10b-478a-9c74-ec7effc59611",
+                    "85ee6133-7952-4d37-baf8-34e5f9318dae",
+                    "0f6d8d74-cfaa-4fed-96e6-735912d77d56",
+                    "68ab1b85-2097-498c-8121-e6c3f70dd24e"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "GUID": "6939948f-71cd-4754-9fa1-0bd408014bd1",
+            "parentCollection": "512373fc-1778-4a86-927c-a9ef5a9ab3b7",
+            "childCollection": "05af125b-b10b-478a-9c74-ec7effc59611",
+            "hackoladeStyles": {
+                "GUID": "27dd9d49-d479-4d6b-aa69-1b7dcd4fbe2d",
+                "autoPositioning": false,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 2130,
+                        "y": 1465.9084541308578
+                    },
+                    {
+                        "x": 2010,
+                        "y": 1465.9084541308578
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            },
+            "comments": "Subscribed user SID's will be listed in the an array within the module documents' payload."
+        },
+        {
+            "name": "Deployments_Messages",
+            "relationshipType": "",
+            "parentField": [
+                [
+                    "05af125b-b10b-478a-9c74-ec7effc59611",
+                    "f43bf243-9e82-4f1a-974d-d4f55a759753",
+                    "45741309-e7fd-4e22-9cc6-ed3c8b864910",
+                    "ba03c202-18ab-410b-b0f5-a19738a6057b"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "56ca338b-9491-405b-a97b-e29e51f0e90e",
+                    "0b3dbf18-4a53-49e4-b71a-9a0baefb96d3",
+                    "fd7f3890-1c03-4e9a-8952-f56bcd9b95df"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "1..n",
+            "GUID": "c042ed82-9ca4-4952-a580-f9862f9e1387",
+            "parentCollection": "05af125b-b10b-478a-9c74-ec7effc59611",
+            "childCollection": "56ca338b-9491-405b-a97b-e29e51f0e90e",
+            "hackoladeStyles": {
+                "GUID": "f6a784d6-96d3-48a5-9f8b-d014d7520c0a",
+                "autoPositioning": false,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 2704,
+                        "y": 1455.5233521260352
+                    },
+                    {
+                        "x": 2515,
+                        "y": 1455.5233521260352
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            },
+            "description": "The relationship is one-to-many from modules to messages, but there is a one-to-one relationship between a deployment and its baseline message (match on deploymentId AND baseLine == true)"
+        },
+        {
+            "name": "Modules_Builds",
+            "relationshipType": "",
+            "parentField": [
+                [
+                    "05af125b-b10b-478a-9c74-ec7effc59611",
+                    "f43bf243-9e82-4f1a-974d-d4f55a759753",
+                    "45741309-e7fd-4e22-9cc6-ed3c8b864910",
+                    "ba03c202-18ab-410b-b0f5-a19738a6057b"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "9232c963-19e3-4a69-a8e8-335b7c85cc3d",
+                    "f2f616af-cf11-4281-9574-6aa9a0d93348"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "1..n",
+            "GUID": "6b3bbaf6-d68b-4cb1-b8ce-081a97089193",
+            "parentCollection": "05af125b-b10b-478a-9c74-ec7effc59611",
+            "childCollection": "9232c963-19e3-4a69-a8e8-335b7c85cc3d",
+            "hackoladeStyles": {
+                "GUID": "9bc9836c-1cdb-416c-9c4f-11fa7c30b0ca",
+                "autoPositioning": false,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 2015,
+                        "y": 1744
+                    },
+                    {
+                        "x": 2130,
+                        "y": 1744
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
+        },
+        {
+            "name": "Anomalies_Rules",
+            "relationshipType": "",
+            "parentField": [
+                [
+                    "05af125b-b10b-478a-9c74-ec7effc59611",
+                    "f43bf243-9e82-4f1a-974d-d4f55a759753",
+                    "45741309-e7fd-4e22-9cc6-ed3c8b864910",
+                    "b497efdf-186d-4e04-8e0d-6c9d53d9b9ed",
+                    "6cb8ec6d-3afa-4e86-a2ce-751a51b87bad",
+                    "3ccd7141-1f12-4cba-8fd9-20334d9031b4"
+                ]
+            ],
+            "parentCardinality": "0..n",
+            "childField": [
+                [
+                    "e35bf049-be16-472c-975e-378d84f48299",
+                    "3cccac2b-aa2f-4ab0-876d-7bd18e5734cd"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "GUID": "d28aa74d-2549-44c1-abe7-58aced990aa8",
+            "parentCollection": "05af125b-b10b-478a-9c74-ec7effc59611",
+            "childCollection": "e35bf049-be16-472c-975e-378d84f48299",
+            "hackoladeStyles": {
+                "GUID": "86682296-8031-49bb-92ec-19ab6cb7a9e2",
+                "autoPositioning": false,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 2702,
+                        "y": 2084.5
+                    },
+                    {
+                        "x": 2515,
+                        "y": 2084.5
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            },
+            "comments": "There's a many to many relationship between module documents and rule documents, however the relationship is many to one from individual anomalies within module documents to rules"
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "b244a2d0-f18e-47c7-9c1d-fc4704fcd929": "Photon Insights",
+        "05af125b-b10b-478a-9c74-ec7effc59611": "Modules",
+        "717ba7ce-ba94-43b5-b031-4ec2c688e08e": "_id",
+        "f43bf243-9e82-4f1a-974d-d4f55a759753": "deployments",
+        "7d4c4a41-19ac-4288-8640-260fd7f88601": "payload",
+        "7b6076b2-fd5d-41d7-ab5a-0a24f217d63b": "applicationName",
+        "d604657e-7ece-4464-94fb-06c6f06385dd": "deploymentName",
+        "bbeae101-f4e9-4650-aa0b-b188efe466f3": "env",
+        "71c38e85-d630-457c-9ba4-e36ce0cab973": "version",
+        "69d23aa4-9815-46e2-80e3-a10c706abd7b": "instanceCount",
+        "56ca338b-9491-405b-a97b-e29e51f0e90e": "Messages",
+        "49ea874b-73e1-42c8-911c-6bcefb4b2ef7": "_id",
+        "0b3dbf18-4a53-49e4-b71a-9a0baefb96d3": "cloud",
+        "fc47379f-b0a6-45a1-b64e-71868d820937": "configs",
+        "7177c010-b33f-4d20-8880-f86071436254": "Modifications",
+        "e35bf049-be16-472c-975e-378d84f48299": "Rules",
+        "3cccac2b-aa2f-4ab0-876d-7bd18e5734cd": "_id",
+        "512373fc-1778-4a86-927c-a9ef5a9ab3b7": "Users",
+        "7d3050a3-2a56-42fc-af66-9503487d1e14": "_id",
+        "9232c963-19e3-4a69-a8e8-335b7c85cc3d": "Builds",
+        "f2f616af-cf11-4281-9574-6aa9a0d93348": "_id",
+        "1592a855-af1e-43fe-8f61-868c018420f0": "builds",
+        "8648fb5d-dcbd-485e-a11e-10a04eb544ac": "buildID",
+        "6be783d0-4374-4b1f-be8e-5a06c596346c": "version",
+        "9e5d1f42-8dec-4f3c-a006-fd7864ce4e17": "commitID",
+        "1851352f-3bf2-4c7c-8786-cdc74c823d94": "commitTime",
+        "fbfea5c8-490b-4e30-8ee6-0f82c1f1e77f": "branchName",
+        "8f3b1ea4-7b74-4547-b5bc-ee184136a042": "buildTime",
+        "eccd5176-4704-4200-97e0-458fc15dc6ce": "_id",
+        "d6422aaa-7e61-4dd1-bb74-f04b6cce4cdf": "deploymentId",
+        "2e89058f-8f44-4627-906f-8993cd2888a4": "instanceId",
+        "5250cce6-dbd6-4726-a2a7-837ed01ff48f": "operation",
+        "35de7c4c-9c34-48bb-bb09-6c79dcc2b424": "Instances_Messages",
+        "9744edd9-5cc7-49ac-9893-947d74898e14": "Instances_ConfigChanges",
+        "6939948f-71cd-4754-9fa1-0bd408014bd1": "Users_Deployments",
+        "64de8c8f-5b86-433c-9cfa-646f187ad836": "lastName",
+        "85110f81-735e-45fc-b26c-a56172834180": "firstName",
+        "160d297c-9abe-432a-892a-76efd2f78e15": "middleName",
+        "ab6d5ae5-7696-47bf-945a-7fe7c2929d84": "active",
+        "4691195a-1065-4df9-a724-712e8771fd5a": "LOB",
+        "91b73434-47a5-4c51-aaf9-093001f7de3f": "lastLoginTime",
+        "039bf3d2-2ece-4fa0-aed4-c6faa5dcd3f7": "persona",
+        "94f91cf7-5714-4e87-88bb-7518d1e71f68": "hasAnomaly",
+        "7b276678-e636-4f15-96e6-8e93388debfc": "tags",
+        "f2343a1e-9439-414c-a05d-b2e8e6277595": "tagName",
+        "a36511c2-1868-44a6-a692-6ff0b2c5c483": "tagValue",
+        "b97abfca-eb37-4424-9158-2de22d8f8330": "instances",
+        "a1f09829-3eaf-49c7-a110-8e5bdbd7e82e": "platformName",
+        "81ea29d0-ad30-4a27-aa84-3d3a494008f0": "spaceName",
+        "ca20537c-abb9-49e0-92a6-bb42e17397ee": "poolName",
+        "ca2ae7e4-7499-475b-81f6-13f22ad8cbae": "spaceId",
+        "5e36afbc-a399-495b-9c29-7ba9c4aa6d0f": "cfAPI",
+        "db55b8fc-7532-44bf-bf82-a20d2bf5f612": "instanceId",
+        "5b34cb09-c231-4dab-948f-ff774803f81e": "createdOn",
+        "149cfa34-e235-4859-a574-f7727580e350": "lastUpdatedOn",
+        "33834706-098c-4d99-9f66-3b5a72bc95f0": "active",
+        "269003c2-5eda-4ab0-adab-644e93e4004b": "hasAnomaly",
+        "54b0db14-5295-47ba-ac5f-6ec203e7fdea": "refreshInterval",
+        "63bed1ee-de3e-4d37-b8e9-b3aa1a7aa991": "photonVersion",
+        "ba03c202-18ab-410b-b0f5-a19738a6057b": "deploymentId",
+        "b497efdf-186d-4e04-8e0d-6c9d53d9b9ed": "anomalies",
+        "05bb1a17-c160-44c0-9134-765558f40dbb": "anomalyId",
+        "8dc1977b-5e71-4d3a-866e-d28968d6fe1b": "payload",
+        "2e7f7709-8755-4ce7-804e-456d493f758c": "propertyName",
+        "a14012a4-6d41-4eaf-8845-5412fa87360a": "deploymentName",
+        "62a5aeea-194a-4230-b205-ab8283be5790": "expectedValue",
+        "6118cb3d-022e-43b6-be39-4375c7919f3d": "currentValue",
+        "d644155f-e9a8-4fbb-9246-1252585c586b": "instanceCount",
+        "04f2a72e-4fba-435f-8d8e-614aa7dc7e56": "description",
+        "49e20b18-3caf-4c9f-b0a8-d73848a2df57": "impactedInstances",
+        "3ccd7141-1f12-4cba-8fd9-20334d9031b4": "ruleId",
+        "13519da1-ce01-4e57-a2d2-a07d8bab61f8": "remediated",
+        "1ff4e90e-97ea-41f1-9d5d-faafb1cad14b": "version",
+        "fc60f815-0edf-44be-8ddb-6a0c825472bd": "ruleType",
+        "9ff4a9ad-b025-4537-be50-c456e721624f": "property",
+        "f7284278-58e6-45bc-ac41-83223e9f2145": "supportedInVersion",
+        "48a9ac60-2596-4843-97dc-96691c2ed25e": "active",
+        "29276606-2166-4f77-8bf0-e8d58306c303": "activeFrom",
+        "50a39bb0-e3db-4fc4-8246-8e5225459178": "script",
+        "c18bb65d-c190-4eff-a56e-dd02a0ab99f6": "valueComparisonType",
+        "b5af12fb-5b56-48cc-bb18-e20d3c3a8c85": "value",
+        "8bad45be-da90-41b7-8e5d-ae8169d00d25": "lowerBound",
+        "334fae25-5055-4985-9640-841704a3bf7c": "upperBound",
+        "794a57b3-c012-40d1-a978-305d828e021e": "severity",
+        "9ee9d672-720e-49ec-9a07-96e0e4f1ac9b": "description",
+        "cc10c22e-8a06-4b8c-96c0-296a80a66e71": "createdOn",
+        "b8208563-945c-4968-b195-13b7ff13bbab": "lastUpdatedOn",
+        "4f59c850-4742-4b1b-bbfe-c6c866b16ad4": "createdBy",
+        "8e0c59d2-7b82-4879-a3a2-261a980871fc": "lastUpdatedBy",
+        "ae421d93-b001-4a23-b7d4-57d8b295b6b6": "oldValue",
+        "4a6b3351-4685-44c0-9554-87b436c92815": "newValue",
+        "7ece0b7a-768c-4018-9118-e1c650341fa2": "path",
+        "3062c2b8-2450-4a7b-9b26-2b4eb1d0c229": "date",
+        "c042ed82-9ca4-4952-a580-f9862f9e1387": "Deployments_Messages",
+        "f80f1756-14ad-4e5f-bf52-6f87565345b9": "baseLine",
+        "bd54b412-630d-4097-9343-678ff2973eda": "space_name",
+        "a28989c4-5be1-4f7d-9d93-e50726112eb4": "appId",
+        "fd7f3890-1c03-4e9a-8952-f56bcd9b95df": "appName",
+        "b3b5fa3b-9715-4597-81ff-97302c7acd92": "instanceId",
+        "b3576c6c-b054-402d-b275-d8c60a191ea6": "space_id",
+        "6b3bbaf6-d68b-4cb1-b8ce-081a97089193": "Modules_Builds",
+        "d28aa74d-2549-44c1-abe7-58aced990aa8": "Anomalies_Rules",
+        "85ee6133-7952-4d37-baf8-34e5f9318dae": "payload",
+        "288f81d9-e8b7-485e-b3f9-cdaba5d412f6": "Instances",
+        "f8aa1fe1-0193-436f-bab3-b0bfee4f4fd4": "applicationId",
+        "afd1ba8b-c679-4b7f-ad02-911e0aed16ec": "deploymentId",
+        "88330226-3938-4bcf-8afd-563f104c05e8": "deploymentName",
+        "21120118-8dc7-4a2f-be72-d0afab7d3ebb": "env",
+        "e29d336e-9699-4dd5-a883-5af83efeb7b3": "platform",
+        "c438c769-e8a7-4c79-b66d-7befa3455d5e": "instanceId",
+        "0f6d8d74-cfaa-4fed-96e6-735912d77d56": "subscribedUsers",
+        "45c74db7-04ab-4412-9b04-85a4d2d64ef6": "platform"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "95098774-fbbe-4894-a0f8-8f745965d6e5"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "0cf6aaf5-44c2-4c7a-81d8-309bab8df24b"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "5496dbfc-e674-4623-848a-35b2a489627f"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v7.x",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2023-11-02T15:18:53.036Z",
+    "GUID": "b8abd802-4f4d-4d0b-b9ed-2cbbb069e093",
+    "isLineageEnabled": false,
+    "hackoladeMeta": {
+        "validationErrors": {
+            "modelName": false
+        }
+    },
+    "lastModifTS": "2023-11-15T18:33:24.001Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.11.7"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "05af125b-b10b-478a-9c74-ec7effc59611",
+                        "x": 2130,
+                        "y": 1293,
+                        "width": 385,
+                        "height": 1035,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "56ca338b-9491-405b-a97b-e29e51f0e90e",
+                        "x": 2704,
+                        "y": 1300,
+                        "width": 263,
+                        "height": 243,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7177c010-b33f-4d20-8880-f86071436254",
+                        "x": 2676,
+                        "y": 1564,
+                        "width": 357,
+                        "height": 306,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "e35bf049-be16-472c-975e-378d84f48299",
+                        "x": 2702,
+                        "y": 1905,
+                        "width": 311,
+                        "height": 359,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "512373fc-1778-4a86-927c-a9ef5a9ab3b7",
+                        "x": 1804,
+                        "y": 1369,
+                        "width": 206,
+                        "height": 177,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "9232c963-19e3-4a69-a8e8-335b7c85cc3d",
+                        "x": 1780,
+                        "y": 1632,
+                        "width": 235,
+                        "height": 224,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 1740,
+                        "y": 1253,
+                        "GUID": "b244a2d0-f18e-47c7-9c1d-fc4704fcd929"
+                    }
+                ],
+                "collapsedNodes": [
+                    "05af125b-b10b-478a-9c74-ec7effc5961185ee6133-7952-4d37-baf8-34e5f9318dae0f6d8d74-cfaa-4fed-96e6-735912d77d56",
+                    "05af125b-b10b-478a-9c74-ec7effc596117b276678-e636-4f15-96e6-8e93388debfc",
+                    "05af125b-b10b-478a-9c74-ec7effc59611f43bf243-9e82-4f1a-974d-d4f55a75975345741309-e7fd-4e22-9cc6-ed3c8b864910b97abfca-eb37-4424-9158-2de22d8f8330",
+                    "05af125b-b10b-478a-9c74-ec7effc59611f43bf243-9e82-4f1a-974d-d4f55a75975345741309-e7fd-4e22-9cc6-ed3c8b864910b497efdf-186d-4e04-8e0d-6c9d53d9b9ed6cb8ec6d-3afa-4e86-a2ce-751a51b87bad8dc1977b-5e71-4d3a-866e-d28968d6fe1b49e20b18-3caf-4c9f-b0a8-d73848a2df57"
+                ],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "05af125b-b10b-478a-9c74-ec7effc59611"
+                    },
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "56ca338b-9491-405b-a97b-e29e51f0e90e"
+                    },
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "9232c963-19e3-4a69-a8e8-335b7c85cc3d"
+                    },
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "7177c010-b33f-4d20-8880-f86071436254"
+                    },
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "e35bf049-be16-472c-975e-378d84f48299"
+                    }
+                ],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}
